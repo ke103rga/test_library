@@ -4,6 +4,9 @@ from .multiplier import Multiplier
 
 
 class Calculator:
+    """
+    Class which encapsulates basic math operations
+    """
     def __init__(self):
         self.counter = Counter()
         self.divider = Divider()

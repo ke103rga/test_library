@@ -1,6 +1,7 @@
 from .counter import Counter
 from .divider import Divider
 from .multiplier import Multiplier
+from .substracter import Substracter
 
 
 class Calculator:
@@ -11,6 +12,7 @@ class Calculator:
         self.counter = Counter()
         self.divider = Divider()
         self.multiplier = Multiplier()
+        self.substracter = Substracter()
 
     def add(self, a, b):
         self.counter.add(a, b)
@@ -20,3 +22,7 @@ class Calculator:
 
     def mul(self, a, b):
         self.multiplier.mul(a, b)
+
+    def sub(self, a, b):
+        self.substracter.sub(a, b)
+
